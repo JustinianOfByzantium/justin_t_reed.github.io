@@ -11,13 +11,14 @@ body, html {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  overflow-y: auto;
 }
 
 
 
 
 .infinite-scroll {
-  animation: scrollDown 20s linear infinite;
+  /* animation: scrollDown 20s linear infinite; */
   display: flex;
   flex-direction: column;
   background-color: rgb(187, 136, 85);
@@ -29,10 +30,10 @@ body, html {
   margin: 0 auto;
 }
 
-@keyframes scrollDown {
+/* @keyframes scrollDown {
   0%   { transform: translateY(0); }
   100% { transform: translateY(-100%); }
-}
+} */
 
 body {
   overflow: hidden;
