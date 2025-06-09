@@ -81,8 +81,8 @@ body, html {
 }
 
 .left img.profile-img {
-  width: 40%;
-  height: auto;
+  width: 150px;
+  /* height: auto; */
   border-radius: 8px;
 }
 
