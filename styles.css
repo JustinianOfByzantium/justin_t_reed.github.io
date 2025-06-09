@@ -16,6 +16,13 @@ body, html {
   padding: 20px 0; 
 }
 
+.profile-img {
+  width: auto;
+  height: auto;
+  margin: 5%;
+  
+}
+
 .navigation-bar {
   position: fixed;
   top: 0;
