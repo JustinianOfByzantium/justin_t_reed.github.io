@@ -21,7 +21,7 @@ body, html {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: darkblue;
+  background-color: rgb(97, 124, 188);
   overflow: hidden;
   z-index: 1000;
 }
@@ -44,7 +44,7 @@ body, html {
 
 /* Style of current page*/
 .navigation-bar a.active {
-  background-color: darkslategray;
+  background-color: rgb(48, 80, 111);
   color: white;
 }
 
