@@ -31,6 +31,9 @@ body, html {
   flex-direction: column;
   background-color: rgb(187, 136, 85);
   color: black;
+  padding: 20px;
+  border-radius: 8px;
+  width: 60%;
 }
 
 @keyframes scrollDown {
