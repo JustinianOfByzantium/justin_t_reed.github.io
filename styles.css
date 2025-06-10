@@ -82,7 +82,6 @@ body, html {
 
 .flex-column {
   flex: 1;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 10px; 
