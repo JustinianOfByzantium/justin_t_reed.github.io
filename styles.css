@@ -30,7 +30,7 @@ body, html {
   /* animation: scrollDown 20s linear infinite; */
   display: flex;
   flex-direction: column;
-  background-color: rgb(152, 234, 255);
+  background-color: rgb(154, 169, 192);
   color: black;
   padding: 20px;
   border-radius: 8px;
@@ -47,6 +47,7 @@ body, html {
   background-color: rgb(103, 104, 185);
   border: rgb(3, 5, 100);
   border-radius: 3px;
+  margin: 0 25%;
   align-items: center;
   text-align: center;
 
@@ -80,7 +81,7 @@ body, html {
   width: 30%;
   height: 30%;
   object-fit: contain; 
-  align-items: center;
+  margin: 0 auto;
 
 }
 
