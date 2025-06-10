@@ -24,8 +24,8 @@ body, html {
 
 .logo-img {
   align-items: center;
-  /* float: left; */
-  width: 40%;
+  width: 30%;
+  display: block;
   height: auto;
   margin: 5%;
 
