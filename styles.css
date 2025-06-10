@@ -113,6 +113,14 @@ body, html {
   color: white;
 }
 
+/* Scroll button */
+.go-down {
+  color: white;
+  background: rgb(103, 104, 185);
+  border: rgb(3, 5, 100);
+  border-radius: 4px;
+}
+
 
 /* @keyframes scrollDown {
   0%   { transform: translateY(0); }
