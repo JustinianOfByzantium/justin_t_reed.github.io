@@ -86,7 +86,7 @@ body {
   height: 4px;
   background-color: rgb(255, 255, 255);
   border: 4px solid #000000;
-  margin-left: 10%;
+  margin-left: 300%;
   left: 100%; /* position it right after the text */
   top: 50%;
   transform: translateY(-50%);
