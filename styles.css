@@ -19,7 +19,7 @@ body, html {
 .profile-img {
   justify-content: left;
   /* float: left; */
-  width: auto;
+  width: 90%;
   height: auto;
   margin: 5%;
 
