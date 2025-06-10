@@ -143,10 +143,12 @@ body, html {
 
 /* Scroll button */
 .go-down {
+  font-size: 16;
+  padding: 3px;
   color: white;
   background: rgb(103, 104, 185);
   border: rgb(3, 5, 100);
-  border-radius: 4px;
+  border-radius: 5%;
 }
 
 .go-down:hover {
