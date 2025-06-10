@@ -19,7 +19,7 @@ body, html {
 .profile-img {
   justify-content: left;
   /* float: left; */
-  width: 40%;
+  width: auto;
   height: auto;
   margin: 5%;
 
@@ -84,6 +84,10 @@ body, html {
   width: 150px;
   /* height: auto; */
   border-radius: 8px;
+}
+
+.right {
+  align-items: center;
 }
 
 .bottom-text {
