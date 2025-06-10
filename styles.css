@@ -167,9 +167,9 @@ body, html {
 .buffer {
   height: 10px;
   width: 100%;
-  background-color: transparent; /* or any color you prefer */
-  margin-top: 10px;
-  margin-bottom: 10px;
+  background-color: transparent;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 
