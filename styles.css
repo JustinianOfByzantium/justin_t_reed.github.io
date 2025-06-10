@@ -164,6 +164,14 @@ body, html {
   margin: 5% auto;
 }
 
+.buffer {
+  height: 10px;
+  width: 100%;
+  background-color: transparent; /* or any color you prefer */
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 
 /* @keyframes scrollDown {
   0%   { transform: translateY(0); }
