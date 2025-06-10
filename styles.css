@@ -160,6 +160,10 @@ body, html {
   background: rgb(157, 158, 175);
 }
 
+.brief-bio {
+  margin: 5% auto;
+}
+
 
 /* @keyframes scrollDown {
   0%   { transform: translateY(0); }
