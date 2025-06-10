@@ -38,7 +38,7 @@ body, html {
   margin-top: 3%;
   max-height: 100%;
   max-width: 800px;
-  margin: 0 auto;
+  margin: 10 auto 30 auto;
 }
 
 .name-container {
@@ -93,10 +93,6 @@ body, html {
 }
 
 
-.bottom-text {
-  width: 90%;
-}
-
 /* 
 .left img.profile-img {
   max-width: 300px;
@@ -140,10 +136,15 @@ body, html {
 
 /* Scroll button */
 .go-down {
-  color: black;
+  color: white;
   background: rgb(103, 104, 185);
   border: rgb(3, 5, 100);
   border-radius: 4px;
+}
+
+.go-down:hover {
+  color:black;
+  background: rgb(157, 158, 175);
 }
 
 
