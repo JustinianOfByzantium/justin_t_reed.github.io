@@ -1,22 +1,22 @@
-* {
+.timeline-page * {
   box-sizing: border-box;
 }
 
 /* Set a background color */
-body {
+.timeline-page body {
   background-color: #c7d1e7;
   font-family: Helvetica, sans-serif;
 }
 
 /* The actual timeline (the vertical ruler) */
-.timeline {
+.timeline-page .timeline {
   position: relative;
   max-width: 1200px;
   margin: 5% auto;
 }
 
 /* The actual timeline (the vertical ruler) */
-.timeline::after {
+.timeline-page .timeline::after {
   content: '';
   position: absolute;
   width: 6px;
@@ -28,36 +28,32 @@ body {
 }
 
 /* Container around content */
-.container {
+.timeline-page .container {
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
   width: 50%;
 }
 
-
-
 /* Place the container to the left */
-.left {
+.timeline-page .left {
   left: 0;
 }
 
 /* Place the container to the right */
-.right {
+.timeline-page .right {
   left: 30%;
   margin-top: 5%;
   margin-bottom: 5%;
 }
 
-
-
 /* Fix the circle for containers on the right side */
-.right::after {
+.timeline-page .right::after {
   left: -16px;
 }
 
 /* The actual content */
-.content {
+.timeline-page .content {
   /* padding: 20px 30px;
   background-color: white;
   position: relative;
@@ -71,15 +67,15 @@ body {
   transition: max-height 0.2s ease-out;
 }
 
-.year-container {
-    position: absolute;
-    left: calc(30% - 20px);
-    text-align: right;
-    /* outline: 1px dashed red; */
+.timeline-page .year-container {
+  position: absolute;
+  left: calc(30% - 20px);
+  text-align: right;
+  /* outline: 1px dashed red; */
 }
 
 /* The circles on the timeline */
-.year-container::after {
+.timeline-page .year-container::after {
   content: '';
   position: absolute;
   width: 20px;
@@ -93,11 +89,8 @@ body {
   z-index: 1;
 }
 
-
-
-
 /* Style the button that is used to open and close the collapsible content */
-.collapsible {
+.timeline-page .collapsible {
   background-color: #eee;
   color: #444;
   cursor: pointer;
@@ -110,11 +103,12 @@ body {
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
+.timeline-page .active,
+.timeline-page .collapsible:hover {
   background-color: #ccc;
 }
 
-.collapsible:after {
+.timeline-page .collapsible:after {
   content: "+"; /* Unicode character for "plus" sign (+) */
   font-size: 18px;
   color: black;
@@ -122,6 +116,6 @@ body {
   margin-left: 5px;
 }
 
-.collapsible.active:after {
+.timeline-page .collapsible.active:after {
   content: "-"; /* Unicode character for "minus" sign (-) */
 }
