@@ -124,22 +124,22 @@ body, html {
 }
 
 /* Style for links*/
-.navigation-bar a {
+.navigation-bar .text-link {
   float: left;
   color: #f2f2f2;
   text-align: center;
   text-decoration: none;
   font-size: 17px;
+  padding: 14px 16px;
 }
 
-.navigation-bar p {
-  padding: 5px 16px;
-}
 
 /* Style upon hovering over link*/
-.navigation-bar a:hover {
+.navigation-bar .text-link:hover {
   background-color: #ddd;
   color: black;
+  /* border: 1px solid red; */
+  
 }
 
 /* Style of current page*/
@@ -149,16 +149,21 @@ body, html {
 }
 
 
+
+
 .navigation-bar img {
-  padding: 16px 18px;
-  max-width: 100%;
-  max-height: 100%;
-  height: 30px;
+  /* padding: 8px 12px; */
+  /* max-width: 100%;
+  max-height: 100%; */
+  margin: 8px;
+  height: 100%;
   width: auto;
   max-width: 30px;
   object-fit: contain; 
   display: inline-block;
   vertical-align: middle;
+  
+  
 }
 
 /* .yt-logo {
