@@ -10,30 +10,54 @@ document.addEventListener("DOMContentLoaded", function () {
 
 document.addEventListener("DOMContentLoaded", () => {
   const navbar = document.getElementById("navbar");
+
   if (navbar) {
     fetch('nav.html')
-      .then(res => res.text())
+      .then(res => {
+        if (!res.ok) throw new Error("Failed to fetch nav.html");
+        return res.text();
+      })
       .then(html => {
         navbar.innerHTML = html;
-      });
-      console.log("Loaded nav:", html);
-      // Get the current path, e.g., 'index.html', 'projects.html'
-      const currentPage = window.location.pathname.split("/").pop() || "index.html" || "hobbies.html";
-      console.log("Current page:", currentPage);
 
+        const currentPage = window.location.pathname.split("/").pop() || "index.html";
+        console.log("Current page:", currentPage);
 
-      // Highlight the active link
-      const links = navbar.querySelectorAll("a[href]");
-      console.log("Found links:", links);
+        const links = navbar.querySelectorAll("a[href]");
+        console.log("Links found:", links);
 
-      links.forEach(link => {
-        const linkPage = link.getAttribute("href");
-        if (linkPage === currentPage) {
-          link.classList.add("active");
-        }
-      });
+        links.forEach(link => {
+          const href = link.getAttribute("href");
+          if (href === currentPage) {
+            console.log("Setting active for:", href);
+            link.classList.add("active");
+          }
+        });
+      })
+      .catch(err => console.error("Error loading nav:", err));
+  } else {
+    console.error("#navbar not found in the DOM");
   }
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  var coll = document.getElementsByClassName("collapsible");
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                  this.classList.toggle("active");
+                  var content = this.nextElementSibling;
+                  if (content.style.maxHeight){
+                      content.style.maxHeight = null;
+                  } else {
+                      content.style.maxHeight = content.scrollHeight + "px";
+                  }
+              });
+          }
+});
+
 
 
 

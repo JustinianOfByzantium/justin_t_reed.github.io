@@ -7,14 +7,7 @@
     <link rel = "stylesheet" href= "projects.css">
   </head>
   <body>
-    <div class="navigation-bar">
-      <a href="index.html">About</a>
-      <a href="CV_summer_2025.pdf" target="_blank">CV</a>
-      <a class="active" href="projects.html">Projects</a>
-      <a href="hobbies.html">Hobbies</a>
-      <a href="contact.html">Contact</a>
-    </div>
-
+    <div id = "navbar"> </div>
     <div class="timeline">
         <div class="container left">
             <div class="year-container">
@@ -193,22 +186,6 @@
     </div>
 
 
-    <script>
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.maxHeight){
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                }
-            });
-        }
-        
-    </script>
+    <script src = "script.js"></script>    
   </body>
 </html>
