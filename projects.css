@@ -75,7 +75,7 @@ body {
     position: absolute;
     left: calc(30% - 20px);
     text-align: right;
-    outline: 1px dashed red;
+    /* outline: 1px dashed red; */
 }
 
 /* The circles on the timeline */

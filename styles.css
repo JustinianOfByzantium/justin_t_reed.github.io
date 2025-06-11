@@ -172,6 +172,11 @@ body, html {
   margin-bottom: 5px;
 }
 
+.project-link {
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+
 
 /* @keyframes scrollDown {
   0%   { transform: translateY(0); }
