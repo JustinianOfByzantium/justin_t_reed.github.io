@@ -77,8 +77,17 @@ body, html {
   flex: 8;
 }
 
-
-
+.hobby-desc {
+  flex: 12;
+  text-align: left;
+  background-color: white;
+  border-radius: 12px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  
+}
 
 .headshot-img {
   max-width: calc(100% - 16px);
