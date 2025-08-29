@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const target = document.getElementById("targetSection");
 
   button.addEventListener("click", function () {
-    target.scrollIntoView({ behavior: "smooth" });
+    // target.scrollIntoView({ behavior: "smooth" });
+    window.location.href = "projects.html";
   });
 });
 
