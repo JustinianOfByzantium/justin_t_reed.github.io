@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   button.addEventListener("click", function () {
     // target.scrollIntoView({ behavior: "smooth" });
-    window.location.href = "projects.html";
+    window.location.href = "hobbies.html";
   });
 });
 
