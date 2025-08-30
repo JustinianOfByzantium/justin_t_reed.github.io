@@ -10,8 +10,8 @@ body, html {
 
 .index-background {
   background-image: url('Images/world_map_1.jpg');
-  background-size: 1416px auto;
-  background-repeat: repeat-y;
+  background-size: 1600px auto;
+  background-repeat: repeat;
   background-position: top center;
   
   display: flex;
@@ -19,12 +19,15 @@ body, html {
   align-items: flex-start;
   min-height: 100vh;
   overflow-y: auto;
+
+  background-color: rgba(0, 0, 0, 0.3); /* dark overlay color */
+  background-blend-mode: multiply; 
 }
 
 .hobbies-background {
   background-image: url('Images/world_map_3.jpg');
-  background-size: 1416px auto;
-  background-repeat: repeat-y;
+  background-size: 1600px auto;
+  background-repeat: repeat;
   background-position: top center;
 
   display: flex;
@@ -32,6 +35,9 @@ body, html {
   align-items: flex-start;
   min-height: 100vh;
   overflow-y: auto;
+
+  background-color: rgba(0, 0, 0, 0.3); /* dark overlay color */
+  background-blend-mode: multiply; 
 }
 
 .profile-img {
@@ -49,10 +55,11 @@ body, html {
 }
 
 
-.infinite-scroll {
+.infinite-scroll-index {
   display: flex;
   flex-direction: column;
   background-color: rgb(212, 216, 220);
+  /* background-color: rgba(255, 229, 188, 0.917); */
   color: black;
   padding: 20px;
   border-radius: 8px;
@@ -62,6 +69,26 @@ body, html {
   max-height: 100%;
   max-width: 800px;
   /* margin: 10% auto 10% auto; */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+  border-radius: 8px;
+}
+
+.infinite-scroll-hobbies {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(212, 216, 220);
+  /* background-color: rgba(255, 229, 188, 0.917); */
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  /* width: 60%; */
+  margin-top: 1%;
+  margin-bottom: 3%;
+  max-height: 100%;
+  max-width: 800px;
+  /* margin: 10% auto 10% auto; */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+  border-radius: 8px;
 }
 
 
