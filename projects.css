@@ -1,7 +1,7 @@
 .projects-background {
   background-image: url('Images/world_map_2.jpg');
-  background-size: 1416px auto;
-  background-repeat: repeat-y;
+  background-size: 1600px auto;
+  background-repeat: repeat;
   background-position: top center;
   
   display: flex;
@@ -58,7 +58,7 @@
   background-color: rgb(0, 0, 0);
   top: 0;
   bottom: 0;
-  left: 30%;
+  left: 15%;
   margin-left: -3px;
 }
 
