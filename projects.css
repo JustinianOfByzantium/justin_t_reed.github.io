@@ -1,17 +1,52 @@
+.projects-background {
+  background-image: url('Images/world_map_2.jpg');
+  background-size: 1416px auto;
+  background-repeat: repeat-y;
+  background-position: top center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+.infinite-scroll-projects {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  /* width: 60%; */
+  margin-top: 1%;
+  margin-bottom: 3%;
+  max-height: 100%;
+  max-width: 800px;
+  /* margin: 10% auto 10% auto; */
+}
+
+
 .timeline-page * {
   box-sizing: border-box;
 }
 
 /* Set a background color */
 .timeline-page body {
-  background-color: #c7d1e7;
-  font-family: Helvetica, sans-serif;
+  background-color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  overflow-y: auto;
+  /* font-family: Helvetica, sans-serif; */
 }
 
 /* The actual timeline (the vertical ruler) */
 .timeline-page .timeline {
   position: relative;
-  max-width: 1200px;
+  max-width: 600px;
   margin: 5% auto;
 }
 
@@ -32,7 +67,7 @@
   padding: 10px 40px;
   position: relative;
   background-color: inherit;
-  width: 50%;
+  width: 70%;
 }
 
 /* Place the container to the left */

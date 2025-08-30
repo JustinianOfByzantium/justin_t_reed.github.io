@@ -5,9 +5,28 @@ body, html {
   /* font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; */
 }
 
-.background {
-  background-color: white;
-  /* height: 100%; */
+
+
+
+.index-background {
+  background-image: url('Images/world_map_1.jpg');
+  background-size: 1416px auto;
+  background-repeat: repeat-y;
+  background-position: top center;
+  
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+
+.hobbies-background {
+  background-image: url('Images/world_map_3.jpg');
+  background-size: 1416px auto;
+  background-repeat: repeat-y;
+  background-position: top center;
+
   display: flex;
   justify-content: center;
   align-items: flex-start;
