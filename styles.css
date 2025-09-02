@@ -9,7 +9,7 @@ body, html {
 
 
 .index-background {
-  background-image: url('Images/world_map_1.jpg');
+  background-image: url('Images/world_map_1.JPG');
   background-size: 1600px auto;
   background-repeat: repeat;
   background-position: top center;
@@ -25,7 +25,7 @@ body, html {
 }
 
 .hobbies-background {
-  background-image: url('Images/world_map_3.jpg');
+  background-image: url('Images/world_map_3.JPG');
   background-size: 1600px auto;
   background-repeat: repeat;
   background-position: top center;
