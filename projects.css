@@ -131,10 +131,12 @@
 
 /* Style the button that is used to open and close the collapsible content */
 .timeline-page .collapsible {
-  background-color: #eee;
-  color: #444;
+  position: relative;
+  /* background-color: #eee;
+  color: #444; */
+  background: none;
   cursor: pointer;
-  padding: 18px;
+  /* padding: 18px; */
   width: 100%;
   border: none;
   text-align: left;
@@ -143,19 +145,101 @@
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.timeline-page .active,
+/* .timeline-page .active,
 .timeline-page .collapsible:hover {
   background-color: #ccc;
+} */
+
+.timeline-page .collapsible:hover  {
+  filter: brightness(0.7);
 }
 
 .timeline-page .collapsible:after {
+  filter: brightness(1.0);
   content: "+"; /* Unicode character for "plus" sign (+) */
-  font-size: 18px;
-  color: black;
-  float: right;
-  margin-left: 5px;
+  font-size: 32px;
+  color: white;
+  position: absolute;
+  top: 80%;
+  left: 90%;
+  /* transform: translate(-50%, -50%); */
+  pointer-events: none;
+  z-index: 5;
 }
 
 .timeline-page .collapsible.active:after {
+  font-size: 32px;
   content: "-"; /* Unicode character for "minus" sign (-) */
 }
+
+
+
+
+.photo-card {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+}
+
+.project-img {
+
+  
+  /* width: calc(100% - 24px); */
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  border: 4px solid rgb(20, 57, 120);
+  /* margin-left: 12px; */
+  object-fit: cover; 
+  display: block;
+}
+
+/* Add label overlapping the image */
+.photo-card .img-label {
+  position: absolute;
+  background: rgba(60, 60, 60, 0.6);
+  color: #fff;
+  /* width: calc(100% - 24px); */
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  top: auto;
+  display: flex;
+  align-items: flex-end;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 1rem;
+  pointer-events: none;
+  z-index: 2;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+
+
+
+/* .timeline-page .collapsible.photo-card {
+  padding: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: none;
+  position: relative;
+  width: 100%;
+  min-height: 200px;
+  display: block;
+}
+
+.timeline-page .collapsible.photo-card .project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: none;
+  border-radius: 0;
+  transition: filter 0.3s;
+  display: block;
+}
+
+.timeline-page .collapsible.photo-card:hover .project-img {
+  filter: brightness(0.7);
+} */
