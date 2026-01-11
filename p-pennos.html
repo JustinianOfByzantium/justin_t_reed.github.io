@@ -1,0 +1,54 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <meta charset = "UTF-8">
+    <title> Main Content </title>
+    <link rel = "stylesheet" href= "styles.css">
+  </head>
+
+  <body>
+    <!-- <div id = "navbar"> </div> -->
+
+    <div class = "index-background">
+        <div class = "vert-container"> 
+            <div class="infinite-scroll-index">
+                <div class="landing-page">
+                    <div class = "brief-bio">
+                        <h1> PennOS: a UNIX-like operating system </h1>
+
+                        <p> 
+                            PennOS functions as a fully realized UNIX-like operating system simulator 
+                            running as a single guest process on a host OS. The architecture successfully maintained a strict abstraction 
+                            between user land and kernel land by utilizing specific function prefixes: <em> u_ </em> for user-level, <em> s_</em> for system calls, 
+                            and <em> k_ </em> for kernel-level operations. While the kernel managed process lifecycles and a priority scheduler driven by 
+                            100ms clock ticks, the core of the data management relied on the PennFAT subsystem.
+                        
+                        </p>
+                        
+                        <p>
+                            I implemented the PennFAT subsystem as a robust, FAT-based file system contained entirely within a single large 
+                            file on the host machine4. I designed it to handle all file operations within a single top-level directory, allowing 
+                            for the creation, modification, and deletion of files. To ensure modularity and prevent the code from becoming a mess, 
+                            I relied on internal kernel-level helpers such as k_write for generic file writing and k_get_block to retrieve specific 
+                            block numbers. This structure allowed the OS to mount the file system in a loop-back manner, providing a stable storage 
+                            layer for all user-level programs.
+                        </p>
+
+                        <p>
+                            I achieved integration between the file system and the rest of the OS through a global file descriptor table and 
+                            specific system calls. To maintain the integrity of the system, I ensured that user-level programs like the 
+                            shell were strictly forbidden from bypassing my PennFAT implementation via host OS calls like read(); instead, 
+                            they interacted with my storage layer through authorized interfaces like s_read. This ensured that every byte 
+                            written to the simulated disk was managed correctly by my PennFAT logic, supporting complex shell features such as 
+                            stdin/stdout redirection.
+                        </p>
+
+                        <a href="projects.html" class = "project-link"> Go Back </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src = "script.js"> </script>
+  </body>

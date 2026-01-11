@@ -198,7 +198,7 @@
 /* Add label overlapping the image */
 .photo-card .img-label {
   position: absolute;
-  background: rgba(60, 60, 60, 0.6);
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
   /* width: calc(100% - 24px); */
   width: 100%;
