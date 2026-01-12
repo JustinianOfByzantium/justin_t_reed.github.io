@@ -25,16 +25,27 @@
                           neighbors of a given block, which allowed any bugs with this setup to be easily tracked and resolved. Following this,
                           I merged with the components created by my team members, which consisted of player physics and terrain generation.
                         </p>
-
+                        
+                        <figure>
+                          <img src = "Images/chunk-rendering.png" class="headshot-img" alt="minecraft chunk rendering picture"> 
+                          <figcaption class = "headshot-caption"> A rendered 4x4 chunk area. Instead of rendering polygons for every block, only visible faces are loaded. </figcaption>
+                        </figure>
                         
                         
                         <p>
                           I then increased the complexity of the terrain by adding caves, which presented an interesting challenge. I wanted to make sure the 
                           caves were large enough to provide connectivity, but narrow enough so as to not be too hollow. After trying out a few different 
                           variations of 3D perlin noise, I ultimately decided to take the absolute value and subtract a normalization value from it. This 
-                          produced results I was satisfied with.
-                            
+                          produced results I was satisfied with. However, the 3D cave generation ended up somewhat reducing the efficiency of the engine,
+                          as it used a triply-nested for-loop to calculate the noise value at each block. If I had more time, I would move these operations
+                          to the GPU. 
                         </p>
+
+
+                        <figure>
+                          <img src = "Images/cave-gen.png" class="headshot-img" alt="minecraft cave generation picture"> 
+                          <figcaption class = "headshot-caption"> Cave area generated using 3D perlin noise. </figcaption>
+                        </figure>
 
                         <p>
                           I then implemented realistic player interaction with liquids present in the terrain. Adding new collision physics was 
@@ -51,6 +62,11 @@
                           perpendicular rectangles as further bounds. Inside of these two rectangles I inverted the color and took the minimum color channel 
                           to output a greyscale color.
                         </p>
+
+                        <figure>
+                          <img src = "Images/player-inventory.png" class="headshot-img" alt="Example of player inventory"> 
+                          <figcaption class = "headshot-caption"> The player's inventory. Each slot can contain up to one block. </figcaption>
+                        </figure>
 
                         <p>
                           The next feature I implemented -- the Player's inventory -- required significantly more work. I decided to implement this because it 
