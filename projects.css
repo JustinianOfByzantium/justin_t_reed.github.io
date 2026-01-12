@@ -154,6 +154,8 @@
   filter: brightness(0.7);
 }
 
+
+
 .timeline-page .collapsible:after {
   filter: brightness(1.0);
   content: "+"; /* Unicode character for "plus" sign (+) */
@@ -172,6 +174,36 @@
   content: "-"; /* Unicode character for "minus" sign (-) */
 }
 
+
+/* Content container */
+.content {
+  position: relative;
+  overflow: hidden;
+  background: white; 
+}
+
+/* Fade overlay */
+.content::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 70px; /* controls fade height */
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0),
+    rgba(255,255,255,1)
+  );
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+
+/* When fully expanded, remove fade */
+.collapsible.active + .content::after {
+  opacity: 0;
+}
 
 
 

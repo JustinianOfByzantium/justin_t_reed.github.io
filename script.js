@@ -42,21 +42,58 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  var coll = document.getElementsByClassName("collapsible");
-          var i;
+// document.addEventListener("DOMContentLoaded", () => {
+//   var coll = document.getElementsByClassName("collapsible");
+//           var i;
 
-          for (i = 0; i < coll.length; i++) {
-              coll[i].addEventListener("click", function() {
-                  this.classList.toggle("active");
-                  var content = this.nextElementSibling;
-                  if (content.style.maxHeight){
-                      content.style.maxHeight = null;
-                  } else {
-                      content.style.maxHeight = content.scrollHeight + "px";
-                  }
-              });
-          }
+//           for (i = 0; i < coll.length; i++) {
+              
+
+
+//               coll[i].addEventListener("click", function() {
+//                   this.classList.toggle("active");
+//                   var content = this.nextElementSibling;
+//                   if (content.style.maxHeight){
+//                       content.style.maxHeight = null;
+//                   } else {
+//                       content.style.maxHeight = content.scrollHeight + "px";
+//                   }
+//               });
+//           }
+// });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const coll = document.getElementsByClassName("collapsible");
+
+  var peekSize = "100px";
+  for (let item of coll) {
+    const content = item.nextElementSibling;
+
+    item.addEventListener("click", function () {
+      this.classList.toggle("active");
+
+      if (content.style.maxHeight && content.style.maxHeight !== peekSize) {
+        // was fully open: close completely
+        content.style.maxHeight = null;
+      } else {
+        // open fully
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+
+    // Hover: peek at content
+    item.addEventListener("mouseenter", () => {
+      if (!item.classList.contains("active")) {
+        content.style.maxHeight = peekSize; 
+      }
+    });
+
+    item.addEventListener("mouseleave", () => {
+      if (!item.classList.contains("active")) {
+        content.style.maxHeight = null;
+      }
+    });
+  }
 });
 
 
