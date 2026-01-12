@@ -26,7 +26,6 @@
                                     <img src="Images/search_engine.png" alt="search engine image" class="project-img styled-project-img">
                                     <div class = "img-label"> 
                                         <h4>Cloud-Deployed Web Search Engine</h4>
-                                        <!-- <p> Project – Statistical Programming Internship</p> -->
                                     </div>
                                 </div>
                             </button>
@@ -45,9 +44,11 @@
                                     We engineered and optimized our design, deploying it to EC2 and processing over 400k pages.
                                 </p>
 
+                                <a href="https://drive.google.com/file/d/1Ls08xORpvSZArllZx5Ri0zS8NKAqMKZ7/view?usp=sharing"> Video Demo</a>
                                 <a href="https://www.linkedin.com/posts/justin-t-reed_backendengineering-distributedsystems-searchengine-activity-7411922794407493633-rksS?utm_source=share&utm_medium=member_desktop&rcm=ACoAADzZMXQBkFGKPoN1s9lIKZbTvaJDtP2BBoU" target="_blank"  class = "project-link"> 
                                     Read More 
                                 </a>
+
                             </div>
                         </div>
 
@@ -72,7 +73,8 @@
                                 </p>
 
                                 <p> This is where my project came in: I developed a software tool that recovers useful information 
-                                    from the original datasets and performs a join on the P21 report created from the data. 
+                                    from the original datasets, joins it with the P21 report, and opens a GUI to provide additional 
+                                    filters. 
 
                                 </p>
 
@@ -102,17 +104,29 @@
                             </div>
                         </div>
 
-                        <button type="button" class="collapsible">
-                            <h3>Chord Application</h3>
-                            <p>  C++, Docker, Git (4637 Lines) </p>
-                            <!-- <p>Course Project – Networked Systems</p> -->
-                        </button>
-                        <div class="content">
-                            <p> Implemented Chord: a distributed hash table with efficient key-based routing and dynamically balanced storage.
+                        <div class = "project-item">
+                            <button type="button" class="collapsible">
+                                <div class = "photo-card">
+                                    <img src="Images/chord-image.jpg" alt="chord image" class="project-img styled-project-img">
+                                    <div class = "img-label"> 
+                                        <h4>Chord Application</h4>
+                                        <!-- <p> Project – Statistical Programming Internship</p> -->
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="content">
+                                <p><strong> C++, Docker, Git (4637 Lines) </strong></p>
+                                <p> Implemented Chord: a distributed hash table with efficient key-based routing and dynamically balanced storage.
                                 Developed LS routing protocol for adaptive shortest-path computation with low-traffic neighbor discovery.
-                            </p>
+                                </p>
+
+                                <p> Throughout this project, I referred closely to the design suggestions as outlayed in the original
+                                    <a href = "https://pdos.csail.mit.edu/papers/chord:sigcomm01/chord_sigcomm.pdf"> Chord paper by Stoica et al.</a>
+                                </p>
+                            </div>
                         </div>
 
+                 
                         <!-- <button type="button" class="collapsible">
                             <h3>Link-State Routing Protocol</h3>
                             <p>Course Project – Networked Systems</p>
@@ -147,12 +161,24 @@
                             </div>
                         </div>
 
-                        <button type="button" class="collapsible">
-                            <h3>Album Discovery Website</h3>
-                            <p>Course Project - Databases</p>
-                        </button>
-                        <div class="content">
-                            <p>Created full-stack music recommendation platform using optimized queries from custom database</p>
+
+
+                        <div class = "project-item">
+                            <button type="button" class="collapsible">
+                                <div class = "photo-card">
+                                    <img src="Images/music-site-database-schema.png" alt="album database entity relationship diagram" class="project-img styled-project-img">
+                                    <div class = "img-label"> 
+                                        <h4>Music Sharing Platform</h4>
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="content">
+                                <p> <strong> SQL, JavaScript, AWS, Git (2820 Lines) </strong> </p>
+                                <p> Created full-stack (React, Node.js, Postgres) music sharing site, with social network and content discovery. 
+                                    Designed database (7.2 million entries) on AWS, programmed and optimized SQL queries (avg. 7.5s → 400ms)</p>
+                                <!-- <a href="" target="_blank" class = "project-link">Video Demo</a> -->
+                                <a href="p-minecraft.html" class = "project-link"> Presentation Slides </a>
+                            </div>
                         </div>
 
                         <!-- <button type="button" class="collapsible">
@@ -163,12 +189,19 @@
                             <p>Implemented triangle rasterization for 3D objects with perspective-correct texture interpolation.</p>
                         </div> -->
 
-                        <button type="button" class="collapsible">
-                            <h3>RISC-V Processor in SystemVerilog</h3>
-                            <p>Course Project - Computer Architecture</p>
-                        </button>
-                        <div class="content">
-                            <p>Assembled fully-pipelined RISC-V 32IM ISA with bypassing</p>
+                        <div class = "project-item">
+                            <button type="button" class="collapsible">
+                                <div class = "photo-card">
+                                    <img src="Images/risc-v-cpu.png" alt="risc-v CPU" class="project-img styled-project-img">
+                                    <div class = "img-label"> 
+                                        <h4>RISC-V CPU</h4>
+                                    </div>
+                                </div>
+                            </button>
+                            <div class="content">
+                                <p><strong> SystemVerilog, RISC-V, Docker, Git (1299 Lines) </strong></p>
+                                <p>Implemented an efficient fully-pipelined RISC-V 32IM CPU and optimized instruction throughput with bypassing</p>
+                            </div>
                         </div>
 
                         <div class = "project-item">
@@ -182,10 +215,10 @@
                                 </div>
                             </button>
                             <div class="content">
-                                <p><strong> Python, Pytorch, CUDA, Colab (413 Lines) </strong></p>
+                                <p><strong> Python, Pytorch, CUDA, Colab (478 Lines) </strong></p>
                                 <p>Designed Seq-to-Seq NN that translates sentences from 1522 possible pinyin to &gt;100k possible characters</p>
-                                <a href="https://drive.google.com/file/d/1nfS9N-1yFVgySLeUu7FmazXtIuB2rMzL/view?usp=sharing" class = "project-link"> Presentation </a>
-                                <a href="https://colab.research.google.com/drive/1ZX_Ztj9-jMfcpvDOcysP3KyST6FXz7fy?usp=sharing" class = "project-link"> Code </a>
+                                <a href="https://drive.google.com/file/d/1nfS9N-1yFVgySLeUu7FmazXtIuB2rMzL/view?usp=sharing" class = "project-link"> Presentation</a>
+                                <a href="https://colab.research.google.com/drive/1ZX_Ztj9-jMfcpvDOcysP3KyST6FXz7fy?usp=sharing" class = "project-link"> Code</a>
                             </div>
                         </div>
                     </div>
@@ -222,15 +255,15 @@
                             </div>
                         </div>
 
-                        <button type="button" class="collapsible">
+                        <!-- <button type="button" class="collapsible">
                             <h3>N-grams for Pinyin to Hanzi translation</h3>
                             <p>Course Project - Data Science</p>
                         </button>
                         <div class="content">
                             <p>Implemented N-gram model for Pinyin to Hanzi translation, focusing on data preprocessing and model evaluation. 
                                 Later expanded on for machine learning project.</p>
-                        </div>
-
+                        </div> -->
+<!-- 
                         <button type="button" class="collapsible">
                             <h3>Chess in Python</h3>
                             <p>Independent Project</p>
@@ -238,7 +271,7 @@
                         <div class="content">
                             <p>Implemented fully-interactable chess board integrated with backend game logic.
                             </p>    
-                        </div>
+                        </div> -->
 
                         <!-- <button type="button" class="collapsible">
                             <h3>Concurrent Tree Data Structure</h3>

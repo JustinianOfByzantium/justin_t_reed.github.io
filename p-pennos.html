@@ -25,7 +25,7 @@
                         
                         <p>
                             I implemented the PennFAT subsystem as a robust, FAT-based file system contained entirely within a single large 
-                            file on the host machine4. I designed it to handle all file operations within a single top-level directory, allowing 
+                            file on the host machine. I designed it to handle all file operations within a single top-level directory, allowing 
                             for the creation, modification, and deletion of files. To ensure modularity and prevent the code from becoming a mess, 
                             I relied on internal kernel-level helpers such as k_write for generic file writing and k_get_block to retrieve specific 
                             block numbers. This structure allowed the OS to mount the file system in a loop-back manner, providing a stable storage 

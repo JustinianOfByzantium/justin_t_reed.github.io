@@ -43,7 +43,10 @@ body, html {
 .profile-img {
   max-width: 100%;
   object-fit: contain;
+}
 
+.project-item a {
+  margin-right: 3%
 }
 
 
